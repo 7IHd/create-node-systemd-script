@@ -1,0 +1,45 @@
+{
+  "name": "create-node-systemd-script",
+  "version": "1.0.0",
+  "description": "Dynamically create a node systemd service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src",
+    "format": "npm run prettier -- --write",
+    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
+    "validate": "npm run lint && npm run prettier -- --list-different",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7IHd/create-node-systemd-script.git"
+  },
+  "author": "Phillip Ramirez",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.5.0",
+    "eslint-config-prettier": "^3.0.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "prettier": "^1.14.2"
+  },
+  "bugs": {
+    "url": "https://github.com/7IHd/create-node-systemd-script/issues"
+  },
+  "homepage": "https://github.com/7IHd/create-node-systemd-script#readme",
+  "dependencies": {
+    "@octokit/rest": "^16.1.0",
+    "chalk": "^2.4.1",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^4.0.0",
+    "figlet": "^1.2.1",
+    "inquirer": "^6.2.1",
+    "lodash": "^4.17.11",
+    "minimist": "^1.2.0",
+    "simple-git": "^1.107.0",
+    "touch": "^3.1.0"
+  }
+}
